@@ -48,24 +48,72 @@
                     <canvas id="grafico4" class="grafico-perfil"></canvas>
                 </div>
             </div></a>
-
-            <a class="btn btn-alunos" href="#">2 - Fausto Silva</a>
-            <a class="btn btn-alunos" href="#">3 - Silvio Santos</a>
-            <a class="btn btn-alunos" href="#">4 - Regina Cazé</a>
-            <a class="btn btn-alunos" href="#">5 - Tony Ramos</a>
-            <a class="btn btn-alunos" href="#">6 - Darcy Ribeiro</a>
-            <a class="btn btn-alunos" href="#">7 - Florestan Fernandes</a>
-            <a class="btn btn-alunos" href="#">8 - Caio Prado Junior</a>
-            <a class="btn btn-alunos" href="#">9 - Celso Furtado</a>
-            <a class="btn btn-alunos" href="#">10 - Raimundo Faoro</a>
-            <a class="btn btn-alunos" href="#">11 - Sérgio Buarque de Holanda</a>
-            <a class="btn btn-alunos" href="#">12 - Boris Fausto</a>
-            <a class="btn btn-alunos" href="#">13 - Hélio Jaguaribe</a>
-            <a class="btn btn-alunos" href="#">14 - Gilberto Freyre</a>
-            <a class="btn btn-alunos" href="#">15 - Getúlio Vargas</a>
-            <a class="btn btn-alunos" href="#">16 - Dante Alighieri</a>
-
-            <div class="canvas-holder"><canvas id="grafico" class="grafico-perfil"></canvas></div>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico5" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico6" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico7" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico8" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico9" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico10" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico11" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico12" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico13" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico14" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico15" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
         </div>
     </div>
 
@@ -75,6 +123,17 @@
             var ctx2 = document.getElementById("grafico2").getContext('2d');
             var ctx3 = document.getElementById("grafico3").getContext('2d');
             var ctx4 = document.getElementById("grafico4").getContext('2d');
+            var ctx5 = document.getElementById("grafico5").getContext('2d');
+            var ctx6 = document.getElementById("grafico6").getContext('2d');
+            var ctx7 = document.getElementById("grafico7").getContext('2d');
+            var ctx8 = document.getElementById("grafico8").getContext('2d');
+            var ctx9 = document.getElementById("grafico9").getContext('2d');
+            var ctx10 = document.getElementById("grafico10").getContext('2d');
+            var ctx11 = document.getElementById("grafico11").getContext('2d');
+            var ctx12 = document.getElementById("grafico12").getContext('2d');
+            var ctx13 = document.getElementById("grafico13").getContext('2d');
+            var ctx14 = document.getElementById("grafico14").getContext('2d');
+            var ctx15 = document.getElementById("grafico15").getContext('2d');
             var data = {
                 labels: ["Não fez", "Incompleta", "Feita"],
                 datasets: [{
@@ -127,6 +186,61 @@
                 options: options
             });
             var myPieChart = new Chart(ctx4,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx5,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx6,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx7,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx8,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx9,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx10,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx11,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx12,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx13,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx14,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx15,{
                 type: 'pie',
                 data: data,
                 options: options

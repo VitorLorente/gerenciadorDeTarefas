@@ -91,8 +91,51 @@ body {
    margin-top: 30%;
  }
 
+ .titulo-aluno{
+   font-size: 60px;
+   color: #dbd4bf;
+   margin-top: 3%;
+ }
+
+ .dados-aluno{
+   float: left;
+   margin: 5%;
+   width: 40%;
+   margin-top: 7%;
+   padding-top: 50px;
+   padding-bottom: 50px;
+ }
+
+ .dados-aluno ul {
+  list-style-type: none;
+  font-size: 30px;
+  color: #e4decb;
+ }
+
+ .grafico-aluno{
+   width: 40%;
+   float: left;
+   margin-top: 7%;
+ }
+
+ .tabela-licao{
+   width: 85%;
+   margin-left: auto;
+   margin-right: auto;
+   height: 80px;
+ }
+ 
+ .tabela-licao tbody{
+  overflow-y: scroll;
+ }
+
+ .tabela-licao tr:hover td{
+   cursor: pointer;
+   background-color: #85c08b;
+ }
+
  @media (max-width: 768px) {
   .form-login{
-    width: 75%;
+    width: 70%;
   }
 }
