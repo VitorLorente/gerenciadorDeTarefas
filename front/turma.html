@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gerenciador de tarefas - Professor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome/web-fonts-with-css/css/fontawesome-all.css"> 
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <h1>Gerenciador de Tarefas</h1>
+    </nav>
+    <div class="site-wrapper"> 
+        <div class="menu-admin">
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                    <p>1 - Ana Maria Braga</p> 
+                    <div class="canvas-holder">
+                        <canvas id="grafico1" class="grafico-perfil"></canvas>
+                    </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico2" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico3" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+            <a><div class="btn btn-alunos" href="#">
+                <p>1 - Ana Maria Braga</p> 
+                <div class="canvas-holder">
+                    <canvas id="grafico4" class="grafico-perfil"></canvas>
+                </div>
+            </div></a>
+
+            <a class="btn btn-alunos" href="#">2 - Fausto Silva</a>
+            <a class="btn btn-alunos" href="#">3 - Silvio Santos</a>
+            <a class="btn btn-alunos" href="#">4 - Regina Cazé</a>
+            <a class="btn btn-alunos" href="#">5 - Tony Ramos</a>
+            <a class="btn btn-alunos" href="#">6 - Darcy Ribeiro</a>
+            <a class="btn btn-alunos" href="#">7 - Florestan Fernandes</a>
+            <a class="btn btn-alunos" href="#">8 - Caio Prado Junior</a>
+            <a class="btn btn-alunos" href="#">9 - Celso Furtado</a>
+            <a class="btn btn-alunos" href="#">10 - Raimundo Faoro</a>
+            <a class="btn btn-alunos" href="#">11 - Sérgio Buarque de Holanda</a>
+            <a class="btn btn-alunos" href="#">12 - Boris Fausto</a>
+            <a class="btn btn-alunos" href="#">13 - Hélio Jaguaribe</a>
+            <a class="btn btn-alunos" href="#">14 - Gilberto Freyre</a>
+            <a class="btn btn-alunos" href="#">15 - Getúlio Vargas</a>
+            <a class="btn btn-alunos" href="#">16 - Dante Alighieri</a>
+
+            <div class="canvas-holder"><canvas id="grafico" class="grafico-perfil"></canvas></div>
+        </div>
+    </div>
+
+    <script>
+            var ctx = document.getElementById("grafico").getContext('2d');
+            var ctx1 = document.getElementById("grafico1").getContext('2d');
+            var ctx2 = document.getElementById("grafico2").getContext('2d');
+            var ctx3 = document.getElementById("grafico3").getContext('2d');
+            var ctx4 = document.getElementById("grafico4").getContext('2d');
+            var data = {
+                labels: ["Não fez", "Incompleta", "Feita"],
+                datasets: [{
+                    data: [12, 19, 15],
+                    backgroundColor: [
+                        'rgba(247, 7, 27, 0.35)',
+                        'rgba(255, 206, 1, 0.35)',
+                        'rgba(14, 209, 2, 0.35)'
+                    ],
+                    borderColor: [
+                        'rgba(157, 180, 204,1)',
+                        'rgba(157, 180, 204, 1)',
+                        'rgba(157, 180, 204, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            }
+    
+            var options = {
+                    layout: {
+                        padding : {
+                            left: -42,
+                            right: 42
+                        }
+                    },
+                    legend : {
+                        display: false
+                    },
+                    devicePixelRatio : 1
+                }
+    
+            var myPieChart = new Chart(ctx,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx1,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx2,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx3,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+            var myPieChart = new Chart(ctx4,{
+                type: 'pie',
+                data: data,
+                options: options
+            });
+        </script>
+</body>
+</html>
