@@ -45,8 +45,19 @@ body {
  }
 
  .menu-admin{
-   margin-left: auto;
-   margin-right: auto;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 10px;
+   align-content: center;
+ }
+
+.menu-admin a{
+  width: 190px;
+  text-decoration: none;
+}
+
+ .menu-admin a:visited, a:active{
+   text-decoration: none;
  }
 
  .navbar{
@@ -132,6 +143,80 @@ body {
  .tabela-licao tr:hover td{
    cursor: pointer;
    background-color: #85c08b;
+ }
+
+ .titulo-tarefa{
+   font-size: 50px;
+ }
+
+ nav i{
+   margin-right: 15px;
+ }
+
+ .nav-menu{
+   float: right;
+   margin-top: 12px;
+   margin-left: 35%;
+ }
+
+ .nav-menu ul{
+   list-style-type: none;
+ }
+
+ .nav-menu ul li{
+  display: inline-block;
+  padding: 2px 10px;
+ }
+
+ .calendario{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  align-content: center;
+ }
+
+ .calendario a:link, a:visited{
+  text-decoration: none;
+  color: white;
+ }
+
+ .btn-evento{
+   width: 270px;
+   height: 270px;
+   float: left;
+   margin-left: 10px;
+   margin-bottom: 5px;
+   text-align: left;
+   padding: 0;
+   background-color: #0e2135;
+   color: #8bc2d3;
+ }
+
+ .btn-evento:hover{
+  background-color: #152d46;
+  color: #1aa7c4;
+ }
+
+ .btn-evento p{
+   float:left;
+   margin-left: 7px;
+   margin-top: 7px;
+   font-size: 25px;
+ }
+
+ .mes-evento p{
+   font-size: 50px;
+ }
+
+ .btn-evento ul{
+   margin-top: 20px;
+   float: left;
+   padding: 0px;
+   margin-left: 5%;
+ }
+
+ .btn-evento ul li{
+   list-style-type: none;
  }
 
  @media (max-width: 768px) {
