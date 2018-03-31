@@ -222,7 +222,7 @@ body {
 
  .detalhes-evento{
   width: 45%;
-  height: 200px;; 
+  height: 30%; 
   background-color: #0e2135;
   color: #8bc2d3;
   float: left;
@@ -234,6 +234,7 @@ body {
 
  .descricao-evento{
    padding: 20px;
+   color: #bbe5f1;
  }
 
  @media (max-width: 768px) {
