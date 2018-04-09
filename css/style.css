@@ -246,6 +246,20 @@ body {
    width: 30%;
  }
 
+ .btn-vistar{
+  height: 45px;
+  width: 20%;
+  background-color: #10859c;
+  color: whitesmoke;
+  margin-left: 60%;
+ }
+
+ .btn-vistar:hover{
+  background-color: #23b5d3;
+}
+
+
+
  @media (max-width: 768px) {
   .form-login{
     width: 70%;
