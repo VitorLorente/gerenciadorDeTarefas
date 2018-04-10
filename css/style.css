@@ -258,6 +258,9 @@ body {
   background-color: #23b5d3;
 }
 
+.th-check{
+  width: 20%;
+}
 
 
  @media (max-width: 768px) {
