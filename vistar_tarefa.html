@@ -32,39 +32,39 @@
                     <tr>
                         <th>Nº</th>
                         <th>Nome</th>
-                        <th class="th-check">Feito <br><input class="checkAll" type="checkbox" name="checkAll"></th>
-                        <th class="th-check">Não Feito <br><input class="checkAll" type="checkbox" name="checkAll"></th>
-                        <th class="th-check">Incompleto <br><input class="checkAll" type="checkbox" name="checkAll"></th>
+                        <th class="th-check">Feito</th>
+                        <th class="th-check">Não Feito</th>
+                        <th class="th-check">Incompleto</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr onclick="location.href = '#';">
-                        <td>1</td>
-                        <td>Aluno Fulando de Tal</td>
-                        <td><input class="check-fez" type="checkbox" name="checkAll"></td>
-                        <td><input class="check-nfez" type="checkbox" name="checkAll"></td>
-                        <td><input class="check-incom" type="checkbox" name="checkAll"></td>
+                        <td class="tb-numero">1</td>
+                        <td class="tb-nome">Aluno Fulando de Tal 1</td>
+                        <td><input class="check-fez" type="checkbox" name="check-fez"></td>
+                        <td><input class="check-nfez" type="checkbox" name="check-nfez"></td>
+                        <td><input class="check-incom" type="checkbox" name="check-incom"></td>
                     </tr>
                     <tr onclick="location.href = '#';">
-                        <td>2</td>
-                        <td>Aluno Fulando de Tal</td>
-                        <td><input class="check-fez" type="checkbox" name="checkAll"></td>
-                        <td><input class="check-nfez" type="checkbox" name="checkAll"></td>
-                        <td><input class="check-incom" type="checkbox" name="checkAll"></td>
+                        <td class="tb-numero">2</td>
+                        <td class="tb-nome">Aluno Fulando de Tal 2</td>
+                        <td><input class="check-fez" type="checkbox" name="check-fez"></td>
+                        <td><input class="check-nfez" type="checkbox" name="check-nfez"></td>
+                        <td><input class="check-incom" type="checkbox" name="check-incom"></td>
                     </tr>
                     <tr onclick="location.href = '#';">
-                        <td>3</td>
-                        <td>Aluno Fulando de Tal</td>
-                        <td><input class="check-fez" type="checkbox" name="checkAll"></td>
-                        <td><input class="check-nfez" type="checkbox" name="checkAll"></td>
-                        <td><input class="check-incom" type="checkbox" name="checkAll"></td>
+                        <td class="tb-numero">3</td>
+                        <td class="tb-nome">Aluno Fulando de Tal 3</td>
+                        <td><input class="check-fez" type="checkbox" name="check-fez"></td>
+                        <td><input class="check-nfez" type="checkbox" name="check-nfez"></td>
+                        <td><input class="check-incom" type="checkbox" name="check-incom"></td>
                     </tr>
                     <tr onclick="location.href = '#';">
-                        <td>4</td>
-                        <td>Aluno Fulando de Tal</td>
-                        <td><input class="check-fez" type="checkbox" name="checkAll"></td>
-                        <td><input class="check-nfez" type="checkbox" name="checkAll"></td>
-                        <td><input class="check-incom" type="checkbox" name="checkAll"></td>
+                        <td class="tb-numero">4</td>
+                        <td class="tb-nome">Aluno Fulando de Tal 4</td>
+                        <td><input class="check-fez" type="checkbox" name="check-fez"></td>
+                        <td><input class="check-nfez" type="checkbox" name="check-nfez"></td>
+                        <td><input class="check-incom" type="checkbox" name="check-incom"></td>
                     </tr>
                 </tbody>
             </table>
@@ -75,13 +75,28 @@
     </div>
 
     <script>
-        var checked = new Array()
-        $('.btn-visitar').click(function(){
-            $('table tr').each(function(){
-                checked.push($(this).find('.check-fez').html());
+        $('input[name=check-fez').prop('checked', true);
+        var lista_vistos = new Array()
+
+        $('.btn-vistar').click(function(){
+            $('tbody tr').each(function(){
+                var visto = 'fez';
+                if($(this).find('.check-nfez').is(':checked') == true){
+                    visto = "nao fez";
+                }
+                else if($(this).find('.check-incom').is(':checked') == true){
+                    visto = "incompleto";
+                }
+                //alert(visto);
+                lista_vistos.push({
+                    "numero": $(this).find('.tb-numero').text(),
+                    "nome": $(this).find('.tb-nome').text(),
+                    "visto": visto
+                });            
             });
-            alert(checked);
+            alert(lista_vistos);
         });
+    
     </script>
 </body>
 </html>
